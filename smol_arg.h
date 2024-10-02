@@ -1,5 +1,7 @@
-#ifndef ARG_H
-#define ARG_H
+/* SPDX-License-Identifier: Unlicense */
+
+#ifndef SMOL_ARG_H
+#define SMOL_ARG_H
 
 #define ARGBEGIN for ((void)(*argv && (--argc, ++argv));              \
                     *argv && ((*argv)[0] == '-' && (*argv)[1]);) do { \
@@ -17,4 +19,4 @@
 #define ARGF(x) (argv[_j] ? argv[_j++] : (x))
 #define EARGF(e) ARGF(((e), (void *)0))
 
-#endif /* ARG_H */
+#endif /* SMOL_ARG_H */

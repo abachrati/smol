@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Unlicense */
+
 #ifndef SMOL_LOG_H
 #define SMOL_LOG_H
 
