@@ -10,7 +10,7 @@ enum log_level {
     log_level_info = 0,
     log_level_warn = 1,
     log_level_err  = 2,
-    log_level_die  = 4
+    log_level_die  = 3
 };
 
 extern char const *log_level_string[4];
@@ -25,7 +25,7 @@ struct log_event {
 
 struct log_callback {
     enum log_level lv;
-    void          *ptr;
+    void          *vp;
 
     void (*fn)(struct log_event *, void *);
 };
